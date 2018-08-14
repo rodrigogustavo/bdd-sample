@@ -21,8 +21,8 @@ public class FizzBuzzStepdefs {
 		result = fizzBuzz.play(number);
 	}
 
-	@Then("^The result is Fizz$")
-	public void theResultWasFizz() throws Throwable{
-		Assertions.assertEquals(result, "Fizz");
+	@Then("^The result is \"([^\"]*)\"$")
+	public void theResultWasFizz(String resultString) throws Throwable{
+		Assertions.assertEquals(result, resultString);
 	}
 }
