@@ -12,14 +12,29 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <cucumber.version>1.2.5</cucumber.version>
+    <selenium.version>2.48.2</selenium.version>
+    <jupiter.version>5.0.0-M3</jupiter.version>
   </properties>
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-java8</artifactId>
+        <version>${cucumber.version}</version>
+        <scope>test</scope>
     </dependency>
-  </dependencies>
+    <dependency>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>${cucumber.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+	    <groupId>org.junit.jupiter</groupId>
+	    <artifactId>junit-jupiter-api</artifactId>
+        <version>${jupiter.version}</version>
+	    <scope>test</scope>
+	</dependency>
+</dependencies>
 </project>
